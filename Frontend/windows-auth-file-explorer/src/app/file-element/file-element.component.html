@@ -1,0 +1,17 @@
+<div class="mb-3 card" *ngIf="file">
+    <div class="card-body">
+        <h5 class="card-title">Название файла: {{file.name}}</h5>
+        <p class="card-text">Размер файла: {{file.size}} байт</p>
+        <div class="row">
+            <div class="col">
+                <a [attr.href]="fileService.getFileLink(file.name)">
+                    <button type="button" class="btn btn-outline-success w-100">Скачать</button>
+                </a>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-outline-danger w-100"
+                    (click)="deleteFile(file.name)">Удалить</button>
+            </div>
+        </div>
+    </div>
+</div>

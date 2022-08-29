@@ -1,0 +1,11 @@
+<div class="container d-flex flex-column align-items-center">
+  <div class="row mb-5 mt-3">
+    <div class="col">
+      <h1>{{title}}</h1>
+    </div>
+  </div>
+  <app-files-list class="row w-100"></app-files-list>
+  <app-file-uploader (messageEvent)="receiveMessage()" class="col"></app-file-uploader>
+</div>
+<app-toasts></app-toasts>
+<router-outlet></router-outlet>

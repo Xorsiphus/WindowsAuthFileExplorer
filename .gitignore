@@ -1,0 +1,8 @@
+/Backend/.idea
+
+/Backend/WindowsAuthFileExplorer/bin
+/Backend/WindowsAuthFileExplorer/obj
+
+/Frontend/windows-auth-file-explorer/.angular
+/Frontend/windows-auth-file-explorer/.vscode
+/Frontend/windows-auth-file-explorer/node_modules

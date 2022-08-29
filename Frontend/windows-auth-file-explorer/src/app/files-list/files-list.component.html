@@ -1,0 +1,3 @@
+<div class="col-6" *ngFor="let file of files">
+    <app-file-element (messageEvent)="receiveMessage()" [file]="file"></app-file-element>
+</div>
