@@ -28,8 +28,7 @@ public static class FileHashService
             CreateHashFile(rootPath, username);
         }
 
-        var file = fileHashModels?.FirstOrDefault(m => m.Name != null && m.Name.Equals(fileName));
-        if (file?.Hash != null && file.Hash.Equals(fileHash))
+        if (fileHashModels?.Any(m => m.Hash != null && m.Hash.Equals(fileHash)) == true)
         {
             return true;
         }
